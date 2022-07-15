@@ -1,6 +1,8 @@
 package com.example.prctican2adrianacua.data.model
 
-class Usuario {
+import java.io.Serializable
+
+class Usuario : Serializable {
     var nombre : String = ""
     var apellido : String = ""
     var username : String = ""

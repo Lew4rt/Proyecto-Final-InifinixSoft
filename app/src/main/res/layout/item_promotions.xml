@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/floatingActionButtonPlateActivity"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="10dp"
+        android:clickable="true"
+        app:backgroundTint="@color/white"
+        app:fabCustomSize="32dp"
+        app:fabSize="mini"
+        app:layout_constraintEnd_toEndOf="@+id/cardViewItemPromotions"
+        app:layout_constraintTop_toTopOf="@+id/cardViewItemPromotions"
+        app:rippleColor="@color/soft_red"
+        app:srcCompat="@drawable/heart_favorite"
+        app:tint="@color/soft_red" />
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardViewItemPromotions"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="5dp"
+        android:layout_marginEnd="5dp"
+        android:layout_marginBottom="15dp"
+        android:stateListAnimator="@null"
+        app:cardCornerRadius="8dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginStart="15dp"
+            android:layout_marginTop="13dp"
+            android:layout_marginEnd="21dp"
+            android:layout_marginBottom="13dp"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    app:cardCornerRadius="8dp">
+
+                    <ImageView
+                        android:id="@+id/imageViewItemPromotions"
+                        android:layout_width="72dp"
+                        android:layout_height="82dp"
+                        android:layout_weight="1"
+                        android:scaleType="fitXY"
+                        app:srcCompat="@drawable/generic_food_image" />
+                </androidx.cardview.widget.CardView>
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginStart="24dp"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/textViewTitleItemPromotions"
+                        android:layout_width="200dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="8dp"
+                        android:ellipsize="end"
+                        android:maxLines="1"
+                        android:scrollHorizontally="true"
+                        android:text="Fruit salad mix"
+                        android:textColor="#3E4462"
+                        android:textSize="16sp" />
+
+                    <TextView
+                        android:id="@+id/textViewPriceItemPromotions"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="$30"
+                        android:textColor="#7E7E7E"
+                        android:textSize="14sp" />
+
+                    <TextView
+                        android:id="@+id/textViewDeliveryItemPromotions"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:drawableStart="@drawable/icon_texview_delivery"
+                        android:drawablePadding="7dp"
+                        android:text="Delivery gratis"
+                        android:textColor="#7E7E7E"
+                        android:textSize="12sp" />
+                </LinearLayout>
+
+                <Button
+                    android:id="@+id/buttonFavoritesItemPromotions"
+                    android:layout_width="30dp"
+                    android:layout_height="42dp"
+                    android:layout_gravity="clip_horizontal"
+                    android:layout_marginEnd="1dp"
+                    android:text=""
+                    android:visibility="gone"
+                    app:cornerRadius="30dp"
+                    app:icon="@drawable/heart_favorite"
+                    app:iconGravity="textTop"
+                    app:iconPadding="0dp"
+                    app:iconSize="22dp"
+                    app:iconTint="@color/soft_red" />
+
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/textViewAptoCeliacosItemPromotions"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:text="Apto celíacos"
+                android:textColor="@color/yellow_eda"
+                android:textSize="12sp" />
+
+        </LinearLayout>
+
+    </androidx.cardview.widget.CardView>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

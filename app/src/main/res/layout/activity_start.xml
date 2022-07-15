@@ -3,54 +3,58 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
+    android:layout_height="wrap_content"
     tools:context=".authentication.StartActivity">
 
-    <LinearLayout
-        android:id="@+id/linearLayout"
-        android:layout_width="0dp"
-        android:layout_height="match_parent"
-        android:layout_marginStart="20dp"
-        android:layout_marginTop="10dp"
-        android:layout_marginEnd="20dp"
-        android:orientation="vertical"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent">
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
 
-        <ImageView
-            android:id="@+id/imageViewLogo"
-            android:layout_width="250dp"
-            android:layout_height="250dp"
-            android:layout_gravity="center_horizontal"
-            android:layout_marginTop="80dp"
-            android:layout_marginBottom="120dp"
-            app:srcCompat="@drawable/perrito_mim"
-            tools:srcCompat="@drawable/perrito_mim" />
-
-
-        <Button
-            android:id="@+id/btnLoginStart"
-            style="@style/PracticaN2_Button"
+        <LinearLayout
+            android:id="@+id/linearLayout"
             android:layout_width="match_parent"
-            android:layout_marginTop="20dp"
-            android:text="Login"
-            android:textAlignment="center"
-            android:textAllCaps="false"
-            android:textSize="20sp"
-            android:textStyle="normal" />
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/margin_side_default"
+            android:layout_marginTop="@dimen/margin_top_default"
+            android:layout_marginEnd="@dimen/margin_side_default"
+            android:layout_marginBottom="20dp"
+            android:orientation="vertical">
 
-        <Button
-            android:id="@+id/btnSignupStart"
-            style="@style/PracticaN2_Button"
-            android:layout_width="match_parent"
-            android:layout_marginTop="20dp"
-            android:text="Signup"
-            android:textAlignment="center"
-            android:textAllCaps="false"
-            android:textSize="20sp"
-            android:textStyle="normal" />
+            <com.makeramen.roundedimageview.RoundedImageView
+                android:id="@+id/img"
+                android:layout_width="match_parent"
+                android:layout_height="400dp"
+                android:layout_marginBottom="20dp"
+                android:scaleType="centerCrop"
+                android:src="@drawable/comida_logo"
+                app:riv_corner_radius="10dp" />
 
-    </LinearLayout>
+
+            <Button
+                android:id="@+id/btnLoginStart"
+                style="@style/PracticaN2_Button"
+                android:layout_width="match_parent"
+                android:layout_gravity="center"
+                android:layout_marginTop="20dp"
+                android:text="Login"
+                android:textAlignment="center"
+                android:textAllCaps="false"
+                android:textSize="30sp"
+                android:textStyle="normal" />
+
+            <Button
+                android:id="@+id/btnSignupStart"
+                style="@style/PracticaN2_Button"
+                android:layout_width="match_parent"
+                android:layout_gravity="center"
+                android:layout_marginTop="20dp"
+                android:text="Signup"
+                android:textAlignment="center"
+                android:textAllCaps="false"
+                android:textSize="30sp"
+                android:textStyle="normal" />
+
+        </LinearLayout>
+    </ScrollView>
 
 </androidx.constraintlayout.widget.ConstraintLayout>

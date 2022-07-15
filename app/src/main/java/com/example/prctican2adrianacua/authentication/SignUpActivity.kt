@@ -2,6 +2,7 @@ package com.example.prctican2adrianacua.authentication
 
 import android.content.Context
 import android.content.Intent
+import android.graphics.Color
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.Toast
@@ -17,15 +18,15 @@ class SignUpActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         binding = ActivitySignUpBinding.inflate(layoutInflater)
-        setTheme(R.style.Theme_PrácticaN2AdrianAcuña)
+        setTheme(R.style.Theme_PrácticaN2AdrianAcuña_NoActionBar)
         val view = binding.root
         setContentView(view)
+        binding.root.setBackgroundColor(Color.parseColor("#F8F5F2"));
+        binding.btnSignupSignUp.isEnabled = false
+        binding.checkBoxSignUp.setOnClickListener{binding.btnSignupSignUp.isEnabled = binding.checkBoxSignUp.isChecked}
 
-        binding.btnSignUpSignUp.isEnabled = false
-        binding.checkBoxSignUp.setOnClickListener{binding.btnSignUpSignUp.isEnabled = binding.checkBoxSignUp.isChecked}
 
-
-        binding.btnSignUpSignUp.setOnClickListener {
+        binding.btnSignupSignUp.setOnClickListener {
             val user = Usuario()
             //Validar que todos los campos estén ingresados
             //Si hay alguno que no: retorno

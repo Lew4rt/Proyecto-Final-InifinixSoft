@@ -1,6 +1,7 @@
 package com.example.prctican2adrianacua.authentication
 
 import android.content.Intent
+import android.graphics.Color
 import android.os.Bundle
 import androidx.appcompat.app.AppCompatActivity
 import com.example.prctican2adrianacua.R
@@ -15,7 +16,7 @@ class StartActivity : AppCompatActivity() {
         binding = ActivityStartBinding.inflate(layoutInflater)
         val view = binding.root
         setContentView(view)
-
+        binding.root.setBackgroundColor(Color.parseColor("#F8F5F2"));
         binding.btnLoginStart.setOnClickListener {
             val intent = Intent(this, LoginActivity::class.java)
             startActivity(intent)

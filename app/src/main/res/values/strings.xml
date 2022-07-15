@@ -1,3 +1,22 @@
 <resources>
     <string name="app_name">Práctica N°2 Adrian Acuña</string>
+    <string name="usuario">Usuario:</string>
+    <string name="favoritos">Favoritos</string>
+    <string name="promociones_del_dia">Promociones del día</string>
+    <string name="ver_m_s">Ver más</string>
+    <string name="home">Home</string>
+    <string name="shop">Shop</string>
+    <string name="search">Search</string>
+    <string name="profile">Profile</string>
+    <string-array name="locations_sample">
+        <item>Jl . Jayakatwang no 301</item>
+        <item>Location Example 322</item>
+        <item>Location Example 666</item>
+        <item>Location Example hehe</item>
+    </string-array>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="shop_fragment">Shop fragment</string>
+    <string name="search_fragment">Search fragment</string>
+    <string name="profile_fragment">Profile fragment</string>
 </resources>

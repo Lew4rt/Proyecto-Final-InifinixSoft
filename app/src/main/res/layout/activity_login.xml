@@ -6,95 +6,78 @@
     android:layout_height="match_parent"
     tools:context=".authentication.LoginActivity">
 
-    <LinearLayout
+    <ScrollView
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:orientation="vertical">
+        android:layout_height="match_parent">
 
         <LinearLayout
-            android:id="@+id/linearLayout2"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_weight="1"
+            android:layout_marginLeft="@dimen/margin_side_default"
+            android:layout_marginRight="@dimen/margin_side_default"
             android:orientation="vertical">
 
-            <FrameLayout
+            <ImageView
+                android:id="@+id/imageView"
+                android:layout_width="match_parent"
+                android:layout_height="400dp"
+                android:layout_weight="1"
+                app:srcCompat="@drawable/cutlery" />
+
+            <LinearLayout
+                android:id="@+id/linearLayout2"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:visibility="visible">
+                android:layout_weight="1"
+                android:orientation="vertical">
 
-                <ImageView
-                    android:id="@+id/imageView2Logo"
-                    android:layout_width="400dp"
-                    android:layout_height="300dp"
-                    android:layout_gravity="center_horizontal"
-                    android:layout_marginTop="10dp"
-                    android:layout_marginRight="40dp"
-                    android:layout_marginBottom="10dp"
-                    app:srcCompat="@drawable/kitten_2"
-                    tools:srcCompat="@drawable/kitten_2" />
-
-                <ImageView
-                    android:id="@+id/imageViewLogo"
-                    android:layout_width="400dp"
-                    android:layout_height="300dp"
-                    android:layout_gravity="center_horizontal"
+                <EditText
+                    android:id="@+id/editTextUsernameLogin"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
                     android:layout_marginLeft="30dp"
-                    android:layout_marginTop="80dp"
-                    android:layout_marginRight="10dp"
-                    app:srcCompat="@drawable/kitten_1"
-                    tools:srcCompat="@drawable/kitten_1" />
+                    android:layout_marginTop="30dp"
+                    android:layout_marginRight="30dp"
+                    android:layout_marginBottom="20dp"
+                    android:ems="10"
+                    android:hint="Username"
+                    android:inputType="text"
+                    android:textSize="20sp"
+                    tools:ignore="TouchTargetSizeCheck" />
 
-            </FrameLayout>
+                <EditText
+                    android:id="@+id/editTextPasswordLogin"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_marginLeft="30dp"
+                    android:layout_marginRight="30dp"
+                    android:layout_marginBottom="60dp"
+                    android:ems="10"
+                    android:hint="Password"
+                    android:inputType="textPassword"
+                    android:textSize="20sp"
+                    tools:ignore="TouchTargetSizeCheck" />
+            </LinearLayout>
 
-            <EditText
-                android:id="@+id/editTextUsernameLogin"
+            <LinearLayout
                 android:layout_width="match_parent"
-                android:layout_height="40dp"
-                android:layout_marginLeft="30dp"
-                android:layout_marginTop="30dp"
-                android:layout_marginRight="30dp"
-                android:layout_marginBottom="20dp"
-                android:ems="10"
-                android:hint="Username"
-                android:inputType="text"
-                android:textSize="18sp"
-                tools:ignore="TouchTargetSizeCheck" />
+                android:layout_height="match_parent"
+                android:layout_weight="20"
+                android:orientation="vertical">
 
-            <EditText
-                android:id="@+id/editTextPasswordLogin"
-                android:layout_width="match_parent"
-                android:layout_height="40dp"
-                android:layout_marginLeft="30dp"
-                android:layout_marginRight="30dp"
-                android:layout_marginBottom="60dp"
-                android:ems="10"
-                android:hint="Password"
-                android:inputType="textPassword"
-                tools:ignore="TouchTargetSizeCheck" />
+                <Button
+                    android:id="@+id/btnLoginLogin"
+                    style="@style/PracticaN2_Button"
+                    android:layout_width="match_parent"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="20dp"
+                    android:text="Login"
+                    android:textAlignment="center"
+                    android:textAllCaps="false"
+                    android:textSize="30sp"
+                    android:textStyle="normal" />
+            </LinearLayout>
         </LinearLayout>
-
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:layout_weight="20"
-            android:background="@color/cardview_dark_background"
-            android:orientation="vertical">
-
-            <Button
-                android:id="@+id/btnLoginLogin"
-                style="@style/PracticaN2_Button"
-                android:layout_width="match_parent"
-                android:layout_height="60dp"
-                android:layout_marginLeft="40dp"
-                android:layout_marginTop="40dp"
-                android:layout_marginRight="40dp"
-                android:text="Login"
-                android:textAlignment="center"
-                android:textAllCaps="false"
-                android:textSize="20sp"
-                android:textStyle="bold" />
-        </LinearLayout>
-    </LinearLayout>
+    </ScrollView>
 
 </androidx.constraintlayout.widget.ConstraintLayout>

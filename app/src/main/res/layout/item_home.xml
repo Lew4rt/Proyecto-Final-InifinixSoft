@@ -1,0 +1,171 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:stateListAnimator="@null">
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/floatingActionButtonPlateActivity"
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:layout_marginStart="245dp"
+        android:layout_marginTop="5dp"
+        android:clickable="true"
+        app:backgroundTint="@color/white"
+        app:fabCustomSize="32dp"
+        app:fabSize="mini"
+        app:layout_constraintStart_toStartOf="@+id/cardViewItemPromotions"
+        app:layout_constraintTop_toTopOf="@+id/cardViewItemPromotions"
+        app:rippleColor="@color/soft_red"
+        app:srcCompat="@drawable/heart_favorite"
+        app:tint="@color/soft_red" />
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardViewItemPromotions"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginBottom="10dp"
+        android:stateListAnimator="@null"
+        app:cardCornerRadius="8dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:id="@+id/imageViewPlateItem"
+                android:layout_width="300dp"
+                android:layout_height="300dp"
+                android:scaleType="fitXY"
+                app:srcCompat="@drawable/generic_food_image" />
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="300dp"
+                android:layout_height="300dp">
+
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/cardViewItemHome"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="16dp"
+                    android:layout_marginEnd="16dp"
+                    android:layout_marginBottom="16dp"
+                    app:cardCornerRadius="8dp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginStart="14dp"
+                        android:layout_marginEnd="7dp"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:id="@+id/textViewPlateTitleItem"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="5dp"
+                            android:text="Ensalada de frutas"
+                            android:textColor="#3E4462"
+                            android:textSize="16sp" />
+
+                        <TextView
+                            android:id="@+id/textViewPlateSummaryItem"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="4dp"
+                            android:ellipsize="end"
+                            android:maxLines="1"
+                            android:scrollHorizontally="true"
+                            android:text="Deliciosa ensalada de frutas"
+                            android:textColor="#7E7E7E"
+                            android:textSize="12sp" />
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:orientation="horizontal">
+
+                            <LinearLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:orientation="vertical">
+
+                                <TextView
+                                    android:id="@+id/textViewPlatePriceItem"
+                                    android:layout_width="83dp"
+                                    android:layout_height="match_parent"
+                                    android:fontFamily="@font/poppins_medium"
+                                    android:text="$30"
+                                    android:textColor="#3E4462"
+                                    android:textSize="14sp" />
+
+                                <TextView
+                                    android:id="@+id/textViewAptoCeliacosItem"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginBottom="3dp"
+                                    android:text="Apto celíacos"
+                                    android:textColor="@color/yellow_eda"
+                                    android:textSize="12sp" />
+
+                            </LinearLayout>
+
+                            <Button
+                                android:id="@+id/buttonDetailHomeItem"
+                                android:layout_width="wrap_content"
+                                android:layout_height="38dp"
+                                android:layout_gravity="bottom"
+                                android:layout_marginStart="70dp"
+                                android:layout_marginBottom="1dp"
+                                android:backgroundTint="@color/yellow_eda"
+                                android:fontFamily="@font/poppins_regular"
+                                android:maxLines="1"
+                                android:paddingLeft="7dp"
+                                android:paddingTop="4dp"
+                                android:paddingRight="7dp"
+                                android:text="Ver detalle"
+                                android:textAllCaps="false"
+                                android:textColor="@color/white"
+                                android:textSize="12sp"
+                                app:cornerRadius="4dp" />
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+                </androidx.cardview.widget.CardView>
+
+                <Button
+                    android:id="@+id/buttonFavoritesItemHome"
+                    android:layout_width="30dp"
+                    android:layout_height="42dp"
+                    android:layout_marginTop="16dp"
+                    android:layout_marginEnd="16dp"
+                    android:text=""
+                    android:visibility="gone"
+                    app:cornerRadius="30dp"
+                    app:icon="@drawable/heart_favorite"
+                    app:iconGravity="textTop"
+                    app:iconPadding="0dp"
+                    app:iconSize="22dp"
+                    app:iconTint="@color/soft_red"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+        </RelativeLayout>
+    </androidx.cardview.widget.CardView>
+</androidx.constraintlayout.widget.ConstraintLayout>

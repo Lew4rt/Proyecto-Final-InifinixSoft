@@ -4,12 +4,31 @@
     <option name="filePathToZoomLevelMap">
       <map>
         <entry key="..\:/Users/adryx/AndroidStudioProjects/PrcticaN2AdrianAcua/app/src/main/res/drawable/border.xml" value="0.127" />
+        <entry key="..\:/Users/adryx/AndroidStudioProjects/PrcticaN2AdrianAcua/app/src/main/res/drawable/bottom_navigation_selector.xml" value="0.1" />
+        <entry key="..\:/Users/adryx/AndroidStudioProjects/PrcticaN2AdrianAcua/app/src/main/res/drawable/corners_shape.xml" value="0.2005" />
+        <entry key="..\:/Users/adryx/AndroidStudioProjects/PrcticaN2AdrianAcua/app/src/main/res/drawable/home_card_buttons.xml" value="0.15" />
+        <entry key="..\:/Users/adryx/AndroidStudioProjects/PrcticaN2AdrianAcua/app/src/main/res/drawable/ic_launcher_background.xml" value="0.1" />
+        <entry key="..\:/Users/adryx/AndroidStudioProjects/PrcticaN2AdrianAcua/app/src/main/res/drawable/spinner_bg.xml" value="0.1" />
+        <entry key="..\:/Users/adryx/AndroidStudioProjects/PrcticaN2AdrianAcua/app/src/main/res/drawable/spinner_item.xml" value="0.134" />
         <entry key="..\:/Users/adryx/AndroidStudioProjects/PrcticaN2AdrianAcua/app/src/main/res/layout/activity_authentication.xml" value="0.17074275362318841" />
-        <entry key="..\:/Users/adryx/AndroidStudioProjects/PrcticaN2AdrianAcua/app/src/main/res/layout/activity_home.xml" value="0.21" />
-        <entry key="..\:/Users/adryx/AndroidStudioProjects/PrcticaN2AdrianAcua/app/src/main/res/layout/activity_login.xml" value="0.33" />
+        <entry key="..\:/Users/adryx/AndroidStudioProjects/PrcticaN2AdrianAcua/app/src/main/res/layout/activity_favorites.xml" value="0.1641025641025641" />
+        <entry key="..\:/Users/adryx/AndroidStudioProjects/PrcticaN2AdrianAcua/app/src/main/res/layout/activity_home.xml" value="0.22" />
+        <entry key="..\:/Users/adryx/AndroidStudioProjects/PrcticaN2AdrianAcua/app/src/main/res/layout/activity_login.xml" value="0.25" />
         <entry key="..\:/Users/adryx/AndroidStudioProjects/PrcticaN2AdrianAcua/app/src/main/res/layout/activity_main.xml" value="0.17074275362318841" />
-        <entry key="..\:/Users/adryx/AndroidStudioProjects/PrcticaN2AdrianAcua/app/src/main/res/layout/activity_sign_up.xml" value="0.4501758499413834" />
-        <entry key="..\:/Users/adryx/AndroidStudioProjects/PrcticaN2AdrianAcua/app/src/main/res/layout/activity_start.xml" value="0.22" />
+        <entry key="..\:/Users/adryx/AndroidStudioProjects/PrcticaN2AdrianAcua/app/src/main/res/layout/activity_plate.xml" value="0.33" />
+        <entry key="..\:/Users/adryx/AndroidStudioProjects/PrcticaN2AdrianAcua/app/src/main/res/layout/activity_promotions.xml" value="0.22" />
+        <entry key="..\:/Users/adryx/AndroidStudioProjects/PrcticaN2AdrianAcua/app/src/main/res/layout/activity_sign_up.xml" value="0.33" />
+        <entry key="..\:/Users/adryx/AndroidStudioProjects/PrcticaN2AdrianAcua/app/src/main/res/layout/activity_start.xml" value="0.25" />
+        <entry key="..\:/Users/adryx/AndroidStudioProjects/PrcticaN2AdrianAcua/app/src/main/res/layout/fragment_home.xml" value="0.2205128205128205" />
+        <entry key="..\:/Users/adryx/AndroidStudioProjects/PrcticaN2AdrianAcua/app/src/main/res/layout/fragment_profile.xml" value="0.1641025641025641" />
+        <entry key="..\:/Users/adryx/AndroidStudioProjects/PrcticaN2AdrianAcua/app/src/main/res/layout/fragment_search.xml" value="0.16111111111111112" />
+        <entry key="..\:/Users/adryx/AndroidStudioProjects/PrcticaN2AdrianAcua/app/src/main/res/layout/fragment_shop.xml" value="0.1693121693121693" />
+        <entry key="..\:/Users/adryx/AndroidStudioProjects/PrcticaN2AdrianAcua/app/src/main/res/layout/item_ej.xml" value="0.25" />
+        <entry key="..\:/Users/adryx/AndroidStudioProjects/PrcticaN2AdrianAcua/app/src/main/res/layout/item_home.xml" value="0.33" />
+        <entry key="..\:/Users/adryx/AndroidStudioProjects/PrcticaN2AdrianAcua/app/src/main/res/layout/item_promotions.xml" value="0.33" />
+        <entry key="..\:/Users/adryx/AndroidStudioProjects/PrcticaN2AdrianAcua/app/src/main/res/layout/recycler_view_ej.xml" value="0.1" />
+        <entry key="..\:/Users/adryx/AndroidStudioProjects/PrcticaN2AdrianAcua/app/src/main/res/layout/spinner_item.xml" value="0.1" />
+        <entry key="..\:/Users/adryx/AndroidStudioProjects/PrcticaN2AdrianAcua/app/src/main/res/menu/bottom_menu.xml" value="0.25" />
       </map>
     </option>
   </component>

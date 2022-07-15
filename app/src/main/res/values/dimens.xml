@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="margin_side_default">15dp</dimen>
+    <dimen name="margin_top_default">10dp</dimen>
+    <dimen name="width_text_buttons_home">88dp</dimen>
+</resources>
